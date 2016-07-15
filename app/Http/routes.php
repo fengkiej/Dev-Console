@@ -19,3 +19,7 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/projects/{id}/settings', 'ProjSettingsController@index');
+Route::get('/projects/new', 'ProjCreateController@index');
+Route::get('/projects/{id}/credentials', 'ProjCredentialsController@index');
+Route::get('/projects/{id}/credentials/api/create', 'ProjCredentialsController@createApiView')
+Route::get('/projects/{id}/consent-screen', 'ProjCScreenController@index');

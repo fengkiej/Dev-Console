@@ -6,7 +6,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <html lang="en">
 
 @section('htmlheader')
-    @include('layouts.partials.htmlheader')
+@include('layouts.partials.htmlheader')
 @show
 
 <!--
@@ -30,33 +30,44 @@ desired effect
 |---------------------------------------------------------|
 -->
 <body class="skin-blue sidebar-mini">
-<div class="wrapper">
+    <div class="wrapper">
 
-    @include('layouts.partials.mainheader')
+        @include('layouts.partials.mainheader')
 
-    @include('layouts.partials.sidebar')
+        @include('layouts.partials.sidebar')
 
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
 
-        @include('layouts.partials.contentheader')
+            @include('layouts.partials.contentheader')
 
-        <!-- Main content -->
-        <section class="content">
-            <!-- Your Page Content Here -->
-            @yield('main-content')
-        </section><!-- /.content -->
-    </div><!-- /.content-wrapper -->
+            <!-- Main content -->
+            <section class="content">
+                <div class="container spark-screen">
+                    <div class="row">
+                        <div class="box box-solid box-primary">
+                            <div class="col-md-10 margin">
 
-    @include('layouts.partials.controlsidebar')
+                                <!-- Your Page Content Here -->
+                                @yield('main-content')
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section><!-- /.content -->
+        </div><!-- /.content-wrapper -->
 
-    @include('layouts.partials.footer')
+        @include('layouts.partials.controlsidebar')
 
-</div><!-- ./wrapper -->
+        @include('layouts.partials.footer')
 
-@section('scripts')
+    </div><!-- ./wrapper -->
+
+    @section('scripts')
     @include('layouts.partials.scripts')
-@show
+    @show
 
 </body>
 </html>
