@@ -1,74 +1,60 @@
 @extends('layouts.app')
 
 @section('htmlheader_title')
-Create API Key
+Create ClientID
 @endsection
 
 @section('contentheader_title')
-Create API Key
+Create ClientID
 @endsection
 
 @section('main-content')
 <div class="small-box bg-blue">
 	<div class="inner">
-		<h3>Server Key</h3>
+		<h3>Web Application</h3>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elementum iaculis leo ac ultrices.</p>
 	</div>
 	<div class="icon">
-		<i class="fa fa-server"></i>
+		<i class="fa fa-laptop"></i>
 	</div>
-	<a data-toggle="modal" href="#serverkey" class="small-box-footer">
+	<a data-toggle="modal" href="#webapp" class="small-box-footer">
 		Select <i class="fa fa-arrow-circle-right"></i>
 	</a>
 </div>
 
 <div class="small-box bg-green">
 	<div class="inner">
-		<h3>Browser Key</h3>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elementum iaculis leo ac ultrices.</p>
-	</div>
-	<div class="icon">
-		<i class="fa fa-globe"></i>
-	</div>
-	<a data-toggle="modal" href="#browserkey" class="small-box-footer">
-		Select <i class="fa fa-arrow-circle-right"></i>
-	</a>
-</div>
-
-<div class="small-box bg-yellow">
-	<div class="inner">
-		<h3>Android Key</h3>
+		<h3>Android</h3>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elementum iaculis leo ac ultrices.</p>
 	</div>
 	<div class="icon">
 		<i class="fa fa-android"></i>
 	</div>
-	<a href="#" class="small-box-footer">
-		In development
+	<a data-toggle="modal" href="#android" class="small-box-footer">
+		Select <i class="fa fa-arrow-circle-right"></i>
 	</a>
 </div>
 
 
-<div class="small-box bg-red">
+<div class="small-box bg-yellow">
 	<div class="inner">
-		<h3>iOS Key</h3>
+		<h3>iOS</h3>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elementum iaculis leo ac ultrices.</p>
 	</div>
 	<div class="icon">
 		<i class="fa fa-apple"></i>
 	</div>
-	<a href="#" class="small-box-footer">
-		In development
+	<a data-toggle="modal" href="#ios" class="small-box-footer">
+		Select <i class="fa fa-arrow-circle-right"></i>
 	</a>
 </div>
 
 
-<!-- Modals -->
-<div class="modal" id="serverkey">
+<!-- Modals --> <!-- I think this part might be simplified, still figuring out how -->
+<div class="modal" id="webapp">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">

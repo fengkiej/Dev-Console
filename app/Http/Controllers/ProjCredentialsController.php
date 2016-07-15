@@ -15,7 +15,7 @@ class ProjCredentialsController extends Controller
      */
     public function index()
     {
-        return view('projectcredentials');
+    	return view('projectcredentials');
     }
 
     /**
@@ -25,6 +25,17 @@ class ProjCredentialsController extends Controller
      */
     public function createApiKeyView()
     {
-        return view('createapi');
+    	return view('createapi');
     }
+
+     /**
+     * Create API key 
+     *
+     * @return View to select API type
+     */
+    public function createClientIdView()
+    {
+    	return view('createclientid');
+    }
+   
 }

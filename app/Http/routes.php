@@ -22,4 +22,5 @@ Route::get('/projects/{id}/settings', 'ProjSettingsController@index');
 Route::get('/projects/new', 'ProjCreateController@index');
 Route::get('/projects/{id}/credentials', 'ProjCredentialsController@index');
 Route::get('/projects/{id}/credentials/api/create-key', 'ProjCredentialsController@createApiKeyView');
+Route::get('/projects/{id}/credentials/clientid/create', 'ProjCredentialsController@createClientIdView');
 Route::get('/projects/{id}/consent-screen', 'ProjCScreenController@index');
