@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('htmlheader_title')
-Project Settings
+Consent Screen
 @endsection
 
 @section('contentheader_title')
-Project Settings
+Consent Screen
 @endsection
 
 @section('main-content')
@@ -24,7 +24,7 @@ Project Settings
 	<br />
 
 	<label>Product Logo</label>
-	<input type="file" class="form-control"> <!-- TODO: add form -->
+	<input type="file"> <!-- TODO: add form -->
 	<br />
 
 	<label>Privacy Policy URL</label>

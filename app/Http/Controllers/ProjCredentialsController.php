@@ -23,7 +23,7 @@ class ProjCredentialsController extends Controller
      *
      * @return View to select API type
      */
-    public function createApiView()
+    public function createApiKeyView()
     {
         return view('createapi');
     }
