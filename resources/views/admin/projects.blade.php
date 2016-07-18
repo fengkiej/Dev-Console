@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin.layouts.app')
 
 @section('htmlheader_title')
 Projects
@@ -11,7 +11,7 @@ Projects
 @section('main-content')
 <!-- TODO: search box, add form! -->
 <div class="input-group">
-	<input type="text" name="q" class="form-control" placeholder="Search user...">
+	<input type="text" name="q" class="form-control" placeholder="Search projects...">
 	<span class="input-group-btn">
 		<button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
 		</button>
