@@ -12,4 +12,14 @@ class AdminUsersController extends Controller
     {
         return view('admin.users');
     }
+
+    /**
+     * User detail
+     *
+     * @return View to show user detail
+     */
+    public function usersDetailView()
+    {
+    	return view('admin.users_detail');
+    }
 }
