@@ -60,15 +60,44 @@ Create ClientID
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title">Create Server Key</h4>
+					<h4 class="modal-title">Web Application</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label>Key Name</label>
+						<input type="text" class="form-control"> <!-- TODO: add form -->
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Create</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+</div>
+<!-- /.modal -->
+
+<div class="modal" id="android">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Android</h4>
 				</div>
 				<div class="modal-body">
 					<div class="form-group">
 						<label>Key Name</label>
 						<input type="text" class="form-control"> <!-- TODO: add form -->
 
-						<label>IP Whitelist</label>	                	
-						<input type="text" class="form-control"> <!-- TODO: change this to listview-->
+						<label>Cert Fingerprint</label>	                	
+						<input type="text" class="form-control"> <!-- TODO: add form -->
+
+						<label>Package Name</label>	                	
+						<input type="text" class="form-control"> <!-- TODO: add form -->
 
 					</div>
 				</div>
@@ -84,21 +113,25 @@ Create ClientID
 </div>
 <!-- /.modal -->
 
-<div class="modal" id="browserkey">
+
+<div class="modal" id="ios">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title">Create Browser Key</h4>
+					<h4 class="modal-title">iOS</h4>
 				</div>
 				<div class="modal-body">
 					<div class="form-group">
 						<label>Key Name</label>
 						<input type="text" class="form-control"> <!-- TODO: add form -->
 
-						<label>Domain Name</label>	                	
-						<input type="text" class="form-control"> <!-- TODO: change this to listview-->
+						<label>Bundle ID</label>	                	
+						<input type="text" class="form-control"> <!-- TODO: add form -->
+
+						<label>AppStore ID</label>	                	
+						<input type="text" class="form-control"> <!-- TODO: add form -->
 
 					</div>
 				</div>

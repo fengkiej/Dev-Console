@@ -24,3 +24,7 @@ Route::get('/projects/{id}/credentials', 'ProjCredentialsController@index');
 Route::get('/projects/{id}/credentials/api/create-key', 'ProjCredentialsController@createApiKeyView');
 Route::get('/projects/{id}/credentials/clientid/create', 'ProjCredentialsController@createClientIdView');
 Route::get('/projects/{id}/consent-screen', 'ProjCScreenController@index');
+
+//vvvv Gonna need some middleware around here vvvv
+Route::get('/admin/home', 'AdminHomeController@index');
+Route::get('/admin/user', 'AdminUserController@index');

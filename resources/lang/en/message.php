@@ -16,4 +16,9 @@ return [
     'projects'                => 'Projects',
     'createproj'              => 'Create Project',
     'settings'                => 'Settings',
+    'admin-panel'             => 'Admin Panel',
+    'user'                    => 'User',
+    'projects'                => 'Projects',
+    'group'                   => 'Group',
+    'api-list'                => 'API List'
 ];
