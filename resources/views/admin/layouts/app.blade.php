@@ -6,7 +6,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <html lang="en">
 
 @section('htmlheader')
-@include('layouts.partials.htmlheader')
+@include('admin.layouts.partials.htmlheader')
 @show
 
 <!--
@@ -39,7 +39,7 @@ desired effect
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
 
-            @include('layouts.partials.contentheader')
+            @include('admin.layouts.partials.contentheader')
 
             <!-- Main content -->
             <section class="content">

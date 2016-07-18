@@ -27,4 +27,5 @@ Route::get('/projects/{id}/consent-screen', 'ProjCScreenController@index');
 
 //vvvv Gonna need some middleware around here vvvv
 Route::get('/admin/home', 'AdminHomeController@index');
-Route::get('/admin/user', 'AdminUserController@index');
+Route::get('/admin/users', 'AdminUsersController@index');
+Route::get('/admin/projects', 'AdminProjectsController@index');

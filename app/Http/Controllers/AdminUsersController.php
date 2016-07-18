@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class AdminUserController extends Controller
+class AdminUsersController extends Controller
 {
     public function index()
     {
-        return view('admin.user');
+        return view('admin.users');
     }
 }
