@@ -16,6 +16,7 @@ Project Credentials
 			<th>Name</th>
 			<th style="width: 35%">Creation Date</th>
 			<th style="width: 35%; text-align:center">Key</th>
+			<th>Action</th>
 		</tr>
 
 		<!-- TODO: this should be looped -->
@@ -24,18 +25,21 @@ Project Credentials
 			<td>Kaskus Forum</td>
 			<td>   </td>
 			<td>   </td>
+			<td style="text-align: center"><button type="button" class="btn btn-danger">Delete</button></td>
 		</tr>
 		<tr>
 			<td>2.</td>
 			<td>Kaskus JB</td>			                 
 			<td>  </td>
 			<td>   </td>
+			<td style="text-align: center"><button type="button" class="btn btn-danger">Delete</button></td>
 		</tr>
 		<tr>
 			<td>3.</td>
 			<td>...</td>
 			<td>  </td>
 			<td>   </td>
+			<td style="text-align: center"><button type="button" class="btn btn-danger">Delete</button></td>
 		</tr>
 		<!-- loop ends here -->
 
@@ -45,7 +49,6 @@ Project Credentials
 	<div align="right">
 		<button type="button" class="btn btn-success">Create API Key</button>
 		<button type="button" class="btn btn-warning">Create oAuth Client</button>
-		<button type="button" class="btn btn-danger">Delete</button>
 	</div>
 	
 </div>

@@ -20,5 +20,6 @@ return [
     'user'                    => 'User',
     'projects'                => 'Projects',
     'group'                   => 'Group',
-    'api-list'                => 'API List'
+    'api-list'                => 'API List',
+    'lorem'                   => 'Lorem ipsum dolor sit amet, mandamus euripidis vim ne, eam natum eripuit intellegebat ea. Usu ut suas inermis posidonium.',
 ];

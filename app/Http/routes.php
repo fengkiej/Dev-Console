@@ -33,3 +33,4 @@ Route::get('/admin/groups', 'AdminGroupsController@index');
 Route::get('/admin/users/{uid}', 'AdminUsersController@usersDetailView');
 Route::get('/admin/groups/{gid}', 'AdminGroupsController@groupsPermissionsView');
 Route::get('/admin/api-list','AdminApiListController@index');
+Route::get('/admin/api-list/forum', 'AdminApiListController@forumApiView');
