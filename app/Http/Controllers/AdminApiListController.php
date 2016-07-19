@@ -12,4 +12,14 @@ class AdminApiListController extends Controller
     {
         return view('admin.api_list');
     }
+
+    /**
+     * Forum API Endpoints
+     *
+     * @return View to create a new project
+     */
+    public function forumApiView()
+    {
+        return view('admin.api_list_forum');
+    }
 }

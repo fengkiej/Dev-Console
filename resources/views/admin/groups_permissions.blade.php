@@ -16,7 +16,6 @@ Group Permissions
 	<br />
 </div>
 
-<!-- /.box -->
 <div class="box box-primary">
 	<div class="box-header">
 		<h3 class="box-title">API Mapping</h3>

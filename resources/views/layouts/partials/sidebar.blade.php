@@ -32,18 +32,19 @@
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu">
 
-            <li class="active"><a href="{{ url('home') }}"><i class='fa fa-dashboard'></i> <span>{{ trans('adminlte_lang::message.home') }}</span></a></li>
+            <li class="{!! Request::is('home') ? 'active' : '' !!}"><a href="{{ url('home') }}"><i class='fa fa-dashboard'></i> <span>{{ trans('adminlte_lang::message.home') }}</span></a></li>
 
             <li class="header">{{ trans('message.projects') }}</li>
-            <li class="treeview">
+            <li class="treeview {{ Request::is('projects/*/*') ? 'active' : '' }}">
                 <a href="#"><i class='fa fa-code'></i> <span> Project 1 </span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class='fa fa-gears'></i> Settings </a></li>
-                    <li><a href="#"><i class='fa fa-certificate'></i> Consent Screen </a></li>
-                    <li><a href="#"><i class='fa fa-key'></i> Credentials </a></li>
+                    <li><a href="{{ route('proj_settings', ['id' => "THIS_SHOULD_BE_CHANGED"]) }}"><i class='fa fa-gears'></i> Settings </a></li>
+                    <li><a href="{{ route('proj_consent', ['id' => "THIS_SHOULD_BE_CHANGED"]) }}"><i class='fa fa-certificate'></i> Consent Screen </a></li>
+                    <li><a href="{{ route('proj_credentials', ['id' => "THIS_SHOULD_BE_CHANGED"]) }}"><i class='fa fa-key'></i> Credentials </a></li>
                 </ul>
             </li>
 
+            <!--we gonna delete this later -->
             <li class="treeview">
                 <a href="#"><i class='fa fa-code'></i> <span> Project 2 </span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
@@ -56,9 +57,9 @@
             <!-- TODO: Make the projects dynamics by using loop -->
             <!-- Optionally, you can add icons to the links -->
             
-            <li><a href="#"><i class='fa fa-plus'></i> <span>{{ trans('message.createproj') }}</span></a></li>
+            <li class="{{ Request::is('projects/new') ? 'active' : '' }}"><a href="{{ route('proj_create') }}"><i class='fa fa-plus'></i> <span>{{ trans('message.createproj') }}</span></a></li>
 
-            <li><a href="#"><i class='fa fa-gear'></i> <span>{{ trans('message.settings') }}</span></a></li>
+            <li class="{{ Request::is('settings') ? 'active' : '' }}"><a href="#"><i class='fa fa-gear'></i> <span>{{ trans('message.settings') }}</span></a></li>
 
 
         </ul><!-- /.sidebar-menu -->
