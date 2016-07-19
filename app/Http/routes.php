@@ -31,3 +31,5 @@ Route::get('/admin/users', 'AdminUsersController@index');
 Route::get('/admin/projects', 'AdminProjectsController@index');
 Route::get('/admin/groups', 'AdminGroupsController@index');
 Route::get('/admin/users/{uid}', 'AdminUsersController@usersDetailView');
+Route::get('/admin/groups/{gid}', 'AdminGroupsController@groupsPermissionsView');
+Route::get('/admin/api-list','AdminApiListController@index');

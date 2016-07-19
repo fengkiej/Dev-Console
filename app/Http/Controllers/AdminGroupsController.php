@@ -12,5 +12,15 @@ class AdminGroupsController extends Controller
     {
         return view('admin.groups');
     }
+
+    /**
+     * Group Permission
+     *
+     * @return View to edit usergroup permission
+     */
+    public function groupsPermissionsView()
+    {
+        return view('admin.groups_permissions');
+    }
 }
 

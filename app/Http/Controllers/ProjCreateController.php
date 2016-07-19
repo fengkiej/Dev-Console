@@ -8,13 +8,13 @@ use App\Http\Requests;
 
 class ProjCreateController extends Controller
 {
-     /**
-     * Create Project
+    /**
+    * Create Project
      *
      * @return View to create a new project
      */
     public function index()
     {
-        return view('createproject');
+    	return view('createproject');
     }
 }
